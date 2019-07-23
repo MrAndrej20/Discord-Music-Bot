@@ -1,0 +1,25 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "Discord Music Bot",
+  "main": "service/dst/index.js",
+  "scripts": {
+    "start": "node service/dst/index.js",
+    "build": "tsc -p service/src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrej Sarafimovski",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "googleapis": "^41.0.1",
+    "node-emoji": "^1.10.0",
+    "node-opus": "^0.3.2",
+    "ytdl-core": "^0.29.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.8",
+    "@types/node-emoji": "^1.8.1",
+    "typescript": "^3.5.3"
+  }
+}
