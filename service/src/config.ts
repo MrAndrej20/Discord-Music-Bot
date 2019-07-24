@@ -2,11 +2,12 @@ const {
     youtubeAuthKey,
     discordLoginKey,
     suffix,
-    isHerokuHosted
+    isHerokuHosted,
+    defaultVolume
 } = process.env;
 
 export const config = {
-    defaultVolume: 1,
+    defaultVolume,
     youtubeAuthKey,
     discordLoginKey,
     suffix,
