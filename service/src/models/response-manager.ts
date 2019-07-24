@@ -126,8 +126,10 @@ export class ResponseManager {
             })
                 .on("end", () => {
                     // if look is disabled, remove the video from the array
-                    if (!playlist.loop) {
-                        playlist.videos.shift();
+                
+                    playlist.videos.shift();
+                    if (playlist.loop) {
+                        playlist.videos.push(video);
                     }
                     return this.play();
                 });
