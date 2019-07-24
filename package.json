@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node service/dst/index.js",
     "build": "tsc -p service/src",
+    "prestart": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrej Sarafimovski",
