@@ -47,7 +47,7 @@ client.on("message", async msg => {
 });
 
 client.login(config.discordLoginKey);
-
+console.log(process.env);
 if(config.isHerokuHosted){
     http.createServer().listen(process.env.PORT)
 }
