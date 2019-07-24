@@ -3,7 +3,7 @@ import { config } from "./config";
 export const suffix = config.suffix;
 
 function generateRegExp(...values: string[]) {
-    const regexr = `^\\${suffix} +${values.join(" +")}$`;
+    const regexr = `^\\${suffix}${values.join(" +")}$`;
     return new RegExp(regexr);
 }
 
