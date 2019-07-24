@@ -1,5 +1,6 @@
 // tslint:disable:no-console
 import Discord from "discord.js";
+import * as http from "http";
 import commands from "./commands";
 import { config } from "./config";
 import { ResponseManager } from "./models/response-manager";
@@ -46,3 +47,7 @@ client.on("message", async msg => {
 });
 
 client.login(config.discordLoginKey);
+
+if(config.isHerokuHosted){
+    http.createServer().listen(8080)
+}
