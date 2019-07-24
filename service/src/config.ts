@@ -6,7 +6,7 @@ const {
 } = process.env;
 
 export const config = {
-    defaultVolume: 0.5,
+    defaultVolume: 1,
     youtubeAuthKey,
     discordLoginKey,
     suffix,
