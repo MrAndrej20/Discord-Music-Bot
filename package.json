@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node service/dst/index.js",
     "build": "tsc -p service/src",
-    "postinstall": "npm run build && npm prune --production",
+    "prestart": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrej Sarafimovski",
@@ -16,11 +16,10 @@
     "googleapis": "^41.0.1",
     "node-emoji": "^1.10.0",
     "node-opus": "^0.3.2",
-    "ytdl-core": "^0.29.3"
-  },
-  "devDependencies": {
+    "ytdl-core": "^0.29.3",
     "@types/node": "^12.6.8",
     "@types/node-emoji": "^1.8.1",
     "typescript": "^3.5.3"
-  }
+  },
+  "devDependencies": {}
 }
