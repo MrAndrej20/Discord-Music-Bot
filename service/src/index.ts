@@ -49,5 +49,5 @@ client.on("message", async msg => {
 client.login(config.discordLoginKey);
 
 if(config.isHerokuHosted){
-    http.createServer((req,res)=>res.end({message:"Hi I'm Kopuk"})).listen(process.env.PORT)
+    http.createServer((req,res)=>res.end("Hi I'm Kopuk")).listen(process.env.PORT)
 }
